@@ -58,4 +58,11 @@ $languages['english'] = array (
     "table_delete" => "Delete",
     "table_new" => "Add new",
     "disconnect" => "Disconnect",
+    "full_participation" => "Full participation", //no checkboxes checked
+    "full_participation_description" => "<ul><li>Tracking applications that use the OGN DDB will mark your position with aircraft identification</li><li>Aircraft details are available in the public OGN Devices Database</li></ul>",
+    "anonymous_participation" => "Anonymous participation", //only noident checkbox checked
+    "anonymous_participation_description" => "<ul><li>Tracking applications that use the OGN DDB will mark your position with an <em>anonymous</em> marker</li><li>Aircraft details are <em>not</em> available in the public OGN Devices Database</li></ul>",
+    "no_participation" => "No participation", //notrack or both checkboxes checked
+    "no_participation_description" => "<ul><li>Tracking applications that use the OGN DDB will <em>not</em> mark your position</li><li>Aircraft details are <em>not</em> available in the public Devices Database.</li><li>SAR-functions are not available for this device</li><li>This device will not contribute to traffic awareness through OGN</li></ul>",
+
 );

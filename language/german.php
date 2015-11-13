@@ -73,4 +73,5 @@ $languages['german'] = array (
     "table_delete" => "Löschen",
     "table_new" => "Hinzufügen",
     "disconnect" => "Abmelden",
+    //todo: add german explanations
 );
