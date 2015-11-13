@@ -20,7 +20,7 @@ $languages['dutch'] = array (
     "input_verif" => "Los de rekensom op, om te controleren dat u geen robot bent:",
     "input_nbdevices" => "Geregistreerde devices",
     "input_notrack" => "Dit apparaat mag NIET getracked worden",
-    "input_noident" => "Dit apparaat mag NIET geidentificeerd worden",
+    "input_noident" => "Dit apparaat mag NIET geïdentificeerd worden",
     "error_login" => "Gebruikersnaam of wachtwoord incorrect",
     "error_pwdontmatch" => "Wachtwoorden komen niet overeen",
     "error_pwtooshort" => "Wachtwoord is te kort (minimaal 4 karakters)",
@@ -58,4 +58,11 @@ $languages['dutch'] = array (
     "table_delete" => "Verwijder",
     "table_new" => "Toevoegen",
     "disconnect" => "Uitloggen",
+    "full_participation" => "Volledig deelnemen",
+    "full_participation_description" => "<ul><li>Tracking applicaties die de OGN DDB gebruiken, geven uw positie weer met vliegtuig identificatie</li><li>Uw vliegtuiggevens zijn te vinden in de openbare Devices Database</li></ul>",
+    "anonymous_participation" => "Annoniem deelnemen",
+    "anonymous_participation_description" => "<ul><li>Tracking applicaties die de OGN DDB gebruiken, geven uw positie weer met een <em>anonieme</em> marker</li><li>Uw vliegtuiggegevens zijn <em>niet</em> te vinden in de openbare Devices Database</li></ul>",
+    "no_participation" => "Niet deelnemen",
+    "no_participation_description" => "<ul><li>Tracking applicaties die de OGN DDB gebruiken, geven uw positie <em>niet</em> weer</li><li>Uw vliegtuiggegevens zijn <em>niet</em> te vinden in de openbare Devices Database</li><li>SAR-mogelijkheden voor deze device zijn uitgesloten</li><li>Deze device draagt niet bij aan traffic-awareness m.b.v. OGN</li></ul>"
+
 );

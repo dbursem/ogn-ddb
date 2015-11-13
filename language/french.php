@@ -58,5 +58,5 @@ $languages['french'] = array (
     "table_delete" => "Supprimer",
     "table_new" => "Ajouter",
     "disconnect" => "Déconnexion",
-
+    //todo: add french explanations
 );

@@ -44,13 +44,20 @@
                 <TD><INPUT TYPE="text" name="accn" VALUE="{{ accn }}" size="25" maxlength="3"></TD>
             </TR>
             <TR>
-                <TD class="inp"><input type="checkbox" name="notrack" value="yes" {{ cnotrack }}></TD>
+                <TD class="inp"><input type="checkbox" name="notrack" value="yes" {{ cnotrack }} id="notrack" onclick="participationDescription()"></TD>
                 <TD>{{ lang.input_notrack }}</TD>
             </TR>
             <TR>
-                <TD class="inp"><input type="checkbox" name="noident" value="yes" {{ cnoident }}></TD>
+                <TD class="inp"><input type="checkbox" name="noident" value="yes" {{ cnoident }} id="noident" onclick="participationDescription()"></TD>
                 <TD>{{ lang.input_noident }}</TD>
             </TR>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="participation" style="border: 1px dotted #333; color: #333; padding: 5px;">
+                    </div>
+                </td>
+            </tr>
             <TR>
                 <TD class="inp"><input type="checkbox" name="owner" value="yes"></TD>
                 <TD>{{ lang.input_owner }}</TD>
@@ -64,7 +71,25 @@
         <INPUT type="hidden" name="action" value="deviceslist">
         <input type="submit" value="{{ lang.input_cancel }}">
     </FORM>
-
+    <script type="text/javascript">
+        {% autoescape 'js' %}
+        function participationDescription(){
+            if (document.getElementById('notrack').checked)
+            {
+                document.getElementById('participation').innerHTML = "<strong>{{ lang.no_participation }}</strong>{{ lang.no_participation_description }}";
+            }
+            else if (document.getElementById('noident').checked)
+            {
+                document.getElementById('participation').innerHTML = "<strong>{{ lang.anonymous_participation }}</strong>{{ lang.anonymous_participation_description }}";
+            }
+            else
+            {
+                document.getElementById('participation').innerHTML = "<strong>{{ lang.full_participation }}</strong>{{ lang.full_participation_description }}";
+            }
+        }
+        participationDescription();
+        {% endautoescape %}
+    </script>
 {% endblock %}
 
 
