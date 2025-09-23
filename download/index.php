@@ -1,5 +1,8 @@
 <?php
 
+# sleep randomly up to 500ms to dispatch queries
+usleep(rand(0,500000));
+
 include '../sql.php';
 $dbh = Database::connect();
 $devtype = array(1 => 'I', 2 => 'F', 3 => 'O');
