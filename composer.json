@@ -1,5 +1,8 @@
 {
     "require": {
         "twig/twig": "~1.0"
+    },
+    "autoload": {
+        "files": ["sql.php"]
     }
 }
